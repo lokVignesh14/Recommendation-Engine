@@ -1,35 +1,28 @@
-🎬 Intelligent Movie Recommendation Engine
+# 🎬 Intelligent Movie Recommendation Engine
 
+![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
+![FastAPI](https://img.shields.io/badge/backend-FastAPI-green)
+![Machine Learning](https://img.shields.io/badge/AI-MachineLearning-orange)
+![PostgreSQL](https://img.shields.io/badge/database-PostgreSQL-blue)
+![MLflow](https://img.shields.io/badge/MLOps-MLflow-purple)
+![Docker](https://img.shields.io/badge/deployment-Docker-blue)
+![Status](https://img.shields.io/badge/status-production--ready-success)
 
+An **AI-powered Movie Recommendation Engine** that provides personalized movie suggestions using **Collaborative Filtering and Neural Recommendation Models**.
 
+The system demonstrates a **production-ready ML architecture** combining:
 
+- Machine Learning models  
+- REST API inference  
+- Experiment tracking  
+- Database storage  
+- Containerized deployment  
 
+This architecture simulates how recommendation systems used by **Netflix, Amazon, and Spotify** operate.
 
+---
 
-
-
-
-
-
-
-
-An AI-powered Movie Recommendation Engine that provides personalized movie suggestions using Collaborative Filtering and Neural Recommendation Models.
-
-The system demonstrates a production-ready ML architecture combining:
-
-Machine Learning models
-
-REST API inference
-
-Experiment tracking
-
-Database storage
-
-Containerized deployment
-
-This architecture simulates how recommendation systems used by Netflix, Amazon, and Spotify operate.
-
-🧩 Core Architecture
+# 🧩 Core Architecture
 
 The recommendation system follows a structured ML pipeline.
 
@@ -46,21 +39,27 @@ FastAPI Inference API
 │
 └── Database Logging
      → PostgreSQL stores recommendations
-🚀 Key AI Features
-🎯 Collaborative Filtering
+
+---
+
+# 🚀 Key AI Features
+
+## 🎯 Collaborative Filtering
 
 Finds similar users based on historical movie ratings.
 
 Technique used:
 
-User–User Similarity
-Cosine Similarity
+User–User Similarity  
+Cosine Similarity  
 
 Example:
 
-If User A and User B like similar movies, the system recommends movies liked by B to A.
+If **User A and User B like similar movies**, the system recommends movies liked by B to A.
 
-🧠 Neural Recommendation Model
+---
+
+## 🧠 Neural Recommendation Model
 
 A deep learning model predicts user preferences.
 
@@ -74,9 +73,11 @@ Neural Network
       ↓
 Predicted Rating Score
 
-This allows the model to learn latent relationships between users and movies.
+This allows the model to learn **latent relationships between users and movies**.
 
-⚡ API-based Recommendation System
+---
+
+## ⚡ API-based Recommendation System
 
 Users interact with the recommendation engine through a REST API.
 
@@ -98,17 +99,17 @@ Example response:
     "The Dark Knight"
   ]
 }
-📊 MLflow Experiment Tracking
+
+---
+
+# 📊 MLflow Experiment Tracking
 
 MLflow is used to track machine learning experiments including:
 
-Model parameters
-
-Training metrics
-
-Experiment runs
-
-Model artifacts
+- Model parameters  
+- Training metrics  
+- Experiment runs  
+- Model artifacts  
 
 Run MLflow UI:
 
@@ -117,73 +118,67 @@ mlflow ui
 Open in browser:
 
 http://localhost:5000
-🏗️ System Components
+
+---
+
+# 🏗️ System Components
+
 AI Layer
-
-Collaborative Filtering
-
-Neural Recommendation Model
-
-Similarity computation
+- Collaborative Filtering
+- Neural Recommendation Model
+- Similarity computation
 
 Backend Layer
-
-FastAPI
-
-REST API endpoints
-
-Recommendation inference
+- FastAPI
+- REST API endpoints
+- Recommendation inference
 
 Data Layer
-
-PostgreSQL database
-
-MovieLens dataset
-
-Recommendation logging
+- PostgreSQL database
+- MovieLens dataset
+- Recommendation logging
 
 MLOps Layer
+- MLflow experiment tracking
+- Docker containerization
 
-MLflow experiment tracking
+---
 
-Docker containerization
+# ⚙️ Technology Stack
 
-⚙️ Technology Stack
 AI / ML
-
-Python
-
-NumPy
-
-Pandas
-
-Scikit-learn
-
-PyTorch
+- Python
+- NumPy
+- Pandas
+- Scikit-learn
+- PyTorch
 
 Backend
-
-FastAPI
-
-Python Async APIs
+- FastAPI
+- Python Async APIs
 
 Database
-
-PostgreSQL
-
-Psycopg2
+- PostgreSQL
+- Psycopg2
 
 MLOps
+- MLflow
+- Docker
 
-MLflow
+---
 
-Docker
+# 📦 Installation
 
-📦 Installation
 Clone Repository
+
 git clone https://github.com/lokVignesh14/Recommendation-Engine.git
+
 cd Recommendation-Engine
+
+---
+
 Create Virtual Environment
+
 python -m venv venv
 
 Windows
@@ -193,18 +188,29 @@ venv\Scripts\activate
 Linux / Mac
 
 source venv/bin/activate
-Install Dependencies
-pip install -r requirements.txt
-⚙️ Configuration
 
-Create a .env file in the root directory.
+---
+
+Install Dependencies
+
+pip install -r requirements.txt
+
+---
+
+# ⚙️ Configuration
+
+Create a `.env` file in the root directory.
 
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=Vicky
 DB_USER=postgres
 DB_PASSWORD=yourpassword
-▶️ Running the Server
+
+---
+
+# ▶️ Running the Server
+
 uvicorn api:app --reload
 
 Server runs at:
@@ -214,7 +220,10 @@ http://127.0.0.1:8000
 API documentation:
 
 http://127.0.0.1:8000/docs
-🐳 Docker Deployment
+
+---
+
+# 🐳 Docker Deployment
 
 Build the Docker image:
 
@@ -229,7 +238,11 @@ docker run --network ai-network -p 8000:8000 \
 -e DB_USER=postgres \
 -e DB_PASSWORD=yourpassword \
 movie-recommender
-📂 Project Structure
+
+---
+
+# 📂 Project Structure
+
 recommendation-engine
 │
 ├── api.py
@@ -242,34 +255,35 @@ recommendation-engine
 ├── requirements.txt
 ├── Dockerfile
 ├── README.md
-🎯 Use Cases
 
-Personalized movie recommendation systems
+---
 
-AI-powered streaming platforms
+# 🎯 Use Cases
 
-Content discovery engines
+- Personalized movie recommendation systems  
+- AI-powered streaming platforms  
+- Content discovery engines  
+- Machine learning portfolio projects  
 
-Machine learning portfolio projects
+---
 
-🔮 Future Improvements
+# 🔮 Future Improvements
 
-Matrix Factorization models
+- Matrix Factorization models  
+- Transformer-based recommendation systems  
+- Online learning recommendation pipelines  
+- Cloud deployment (AWS / GCP)
 
-Transformer-based recommendation systems
+---
 
-Online learning recommendation pipelines
-
-Cloud deployment (AWS / GCP)
-
-👨‍💻 Author
+# 👨‍💻 Author
 
 Lok Vignesh
 
 AI / Machine Learning Engineer
 
-LinkedIn
+LinkedIn  
 https://linkedin.com/in/lok-vignesh-b-3a3454227
 
-Email
+Email  
 lokvignesh1b@gmail.com
